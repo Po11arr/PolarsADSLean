@@ -1,4 +1,4 @@
-# Polar's PVP Lean
+# Polar's ADS Lean
 
 Rainbow Six style leaning on foot for Space Engineers PvP. Client plugin for [Pulsar](https://github.com/SpaceGT/Pulsar).
 
@@ -34,7 +34,7 @@ Q and E are the vanilla roll keys, which do nothing on foot without the jetpack.
 
 ## Settings
 
-Pulsar plugin list > Polar's PVP Lean > Settings.
+Pulsar plugin list > Polar's ADS Lean > Settings.
 
 | Option | Default | Range |
 |---|---|---|
@@ -44,7 +44,7 @@ Pulsar plugin list > Polar's PVP Lean > Settings.
 | Lean distance (m) | 0.5 | 0.2 to 0.8 |
 | Camera tilt (degrees) | 10 | 0 to 20, 0 = no tilt |
 
-Saved to `%AppData%\SpaceEngineers\Storage\PolarsPVPLean.cfg`, created with the defaults on first run. A damaged file is ignored (defaults are used) and left in place. Delete it to reset.
+Saved to `%AppData%\SpaceEngineers\Storage\PolarsADSLean.cfg`, created with the defaults on first run. A damaged file is ignored (defaults are used) and left in place. Delete it to reset.
 
 ## Compatibility
 
@@ -67,12 +67,12 @@ Four Harmony patches, all for the local player only:
 | `MyCharacter.GetViewMatrix()` | postfix | Rolls the first-person view around its forward axis |
 | `MyCharacterWeaponPositionComponent.UpdateGraphicalWeaponPosition()` (private) | postfix | Rolls the first-person gun model with the view |
 
-Every patch is guarded: an unexpected error writes one line to the game log, prefixed `[PolarsPVPLean]`, and turns the lean off until the game restarts. If a patch target is missing after a game update, the plugin removes its own patches and stays off. No networking, and no file access beyond its own config.
+Every patch is guarded: an unexpected error writes one line to the game log, prefixed `[PolarsADSLean]`, and turns the lean off until the game restarts. If a patch target is missing after a game update, the plugin removes its own patches and stays off. No networking, and no file access beyond its own config.
 
 ## Bug reports
 
-[Open an issue](https://github.com/Po11arr/PolarsPVPLean/issues) with your Pulsar `info.log` (`%AppData%\Pulsar\Legacy\info.log`), the `[PolarsPVPLean]` lines from the game log (`%AppData%\SpaceEngineers\SpaceEngineers_*.log`), and what you were doing.
+[Open an issue](https://github.com/Po11arr/PolarsADSLean/issues) with your Pulsar `info.log` (`%AppData%\Pulsar\Legacy\info.log`), the `[PolarsADSLean]` lines from the game log (`%AppData%\SpaceEngineers\SpaceEngineers_*.log`), and what you were doing.
 
 ## Development
 
-Built on the [CometWorks client plugin template](https://github.com/CometWorks/client-plugin-template). The plugin source is in `PolarsPVPLean`. Pulsar compiles it from source; Harmony comes from Pulsar and nothing is bundled.
+Built on the [CometWorks client plugin template](https://github.com/CometWorks/client-plugin-template). The plugin source is in `PolarsADSLean`. Pulsar compiles it from source; Harmony comes from Pulsar and nothing is bundled.
