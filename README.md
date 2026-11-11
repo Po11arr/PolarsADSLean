@@ -2,6 +2,10 @@
 
 Rainbow Six style leaning on foot for Space Engineers PvP. Client plugin for [Pulsar](https://github.com/SpaceGT/Pulsar).
 
+![Behind cover and leaning out: the launcher scope only sees the beam, leaning out puts the target in the sights](docs/images/launcher-before-after.jpg)
+
+*Left: behind cover. Right: holding E, the side-step clears the beam and the target is in the sights.*
+
 **Multiplayer:** no server install. The lean is normal strafe input, which the game already sends to the server. Hits and movement stay server-authoritative exactly as in vanilla.
 
 ## What it does
@@ -13,6 +17,15 @@ Rainbow Six style leaning on foot for Space Engineers PvP. Client plugin for [Pu
 - Walk sideways while holding the lean to keep it. Letting go always straightens you up, walking or not.
 - Works standing and crouching. The lean holds through jumps and bumps on uneven ground.
 - Movement is measured relative to what you stand on, so it works on moving and turning ships.
+
+## Screenshots
+
+| | |
+|---|---|
+| ![Leaning right with the rifle, camera tilted](docs/images/lean-rifle.jpg) | ![Aiming down the rifle sights while leaning](docs/images/lean-ads.jpg) |
+| Leaning right with the rifle. The camera and gun tilt; the crosshair stays on target. | Aiming down sights while leaning. |
+| ![Rocket launcher scope while leaning round a beam](docs/images/lean-launcher.jpg) | ![Third person: the character steps out from behind the beam](docs/images/lean-third-person.jpg) |
+| Launcher scope while leaning round cover. | Third person: the real side-step other players see. |
 
 ## Where it works
 
